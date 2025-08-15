@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+body{
+    font-family: "montserrat", sans-serif;
+    font-weight: 300;
+}
+
+header img{
+    height: 100px;
+}
+
+#botonera{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: darkred;
+}
+
+.titulo{
+    text-align: center;
+}
+
+#img-fondo{
+    background-image: url(../assets/img/margarita_full.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#img-fondo i{
+    font-size: 50px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+#ubicacion a{
+    text-decoration: none;
+}
+
+footer h6{
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#redes a i{
+    font-size: 25px;
+    color: black;
+}
+
+footer img{
+    height: 70px;
+}
+
+.articulo img{
+    height: 300px;
+}
+
+.precio{
+    background-color: red;
+    color: white;
+}
+
+.precio h5{
+    font-size: 20px;
+}
+
+.articulo a {
+    text-decoration: none;
+}
+
+.resena i{
+    font-size: 30px;
+}
+
+.resena img{
+    height: 200px;
+}
+
+.fecha{
+    color: gray;
+    font-size: 12px;
+    text-align: right;
+}
+
+#banner{
+    height: 800px;
+    width: 20%;
+    background-image: url(../assets/img/pizza-banner.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+#pedido th, td{
+    text-align: center;
+}
+
+#pedido img{
+    height: 100px;
+}
+
+#pedido a{
+    text-decoration: none;
+    color: red;
+}
+
+#pedido a i{
+    font-size: 12px;
+}
+
+#total{
+    background-color: red;
+    color: white;
+}

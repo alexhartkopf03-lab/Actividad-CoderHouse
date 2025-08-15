@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo.png" alt="logo">
+        <nav>
+            <ul id="botonera">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="carta.html">CARTA</a></li>
+                <li><a href="resenas.html">RESEÑAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+            </ul>
+            <a href="mi_pedido.html">MI PEDIDO</a>   
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="banner"></div>
+            <div id="pedido">
+                <h1 class="titulo">MI PEDIDO</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../assets/img/muzarella.jpg" alt="Pizza Muzarella"></td>
+                            <td>Pizza Muzarella</td>
+                            <td>1</td>
+                            <td>$9000</td>
+                            <td>$9000</td>
+                            <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../assets/img/fugazzeta.jpg" alt="Pizza Fugazzeta"></td>
+                            <td>Pizza Fugazzeta</td>
+                            <td>2</td>
+                            <td>$11000</td>
+                            <td>$22000</td>
+                            <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="total">TOTAL $31000</p>
+            </div>
+            <div id="envio">
+                <h2 class="titulo">DATOS DE ENVIO</h2>
+                <form action="#">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" required>
+                    <label>Apellido:</label>
+                    <input type="text" name="apellido" required>
+                    <label>Direccion:</label>
+                    <input type="text" name="direccion" required>
+                    <label>Telefono:</label>
+                    <input type="number" name="telefono" required>
+                    <label>Comentario:</label>
+                    <textarea name="comentario" rows="2"></textarea>
+                    <input type="submit" value="REALIZAR PEDIDO">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h6>CONTACTO</h6>
+            <ul>
+                <li><a href="tel:+3564-456551">3564-456551</a></li>
+                <li><a href="mailto:alguien@gmail.com">alguien@gmail.com</a></li>
+            </ul>
+        </div>
+        <div id="redes">
+            <h6>REDES</h6>
+            <ul>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+        <img src="../assets/img/logo.png" alt="Logo">
+    </footer>
+</body>
+</html>
