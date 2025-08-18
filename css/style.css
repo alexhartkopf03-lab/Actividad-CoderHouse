@@ -13,67 +13,81 @@ body{
     font-weight: 300;
 }
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
 header img{
-    height: 100px;
-}
-
-#botonera{
-    list-style: none;
-}
-
-nav a{
-    text-decoration: none;
-    color: darkred;
+    height: 70px;
 }
 
 .titulo{
     text-align: center;
-}
-
-#img-fondo{
-    background-image: url(../assets/img/margarita_full.jpg);
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
-#img-fondo i{
-    font-size: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .subtitulo{
     text-align: center;
+    padding: 5px;
+    margin-top: 10px;
 }
 
-#ubicacion a{
-    text-decoration: none;
+.ubicacion{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer h6{
-    font-size: 12px;
-    text-decoration: underline;
+.ubicacion p{
+    text-align: center;
 }
 
-footer ul{
-    list-style: none;
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(212, 227, 222);
+    padding: 10px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.contacto ul{
+    list-style: circle;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-redes{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 8px;
 }
 
 footer a{
     text-decoration: none;
-    font-size: 12px;
+    color: black;
+    font-size: 14px;
 }
 
-#redes a i{
+footer .redes a{
     font-size: 25px;
-    color: black;
 }
 
 footer img{
-    height: 70px;
+    height: 60px;
 }
+
+/* ------------------------------------------------ INDEX, HEADER Y FOOTER --------------------------------------------- */
 
 .articulo img{
     height: 300px;
