@@ -42,10 +42,6 @@ header img{
     align-items: center;
 }
 
-.ubicacion p{
-    text-align: center;
-}
-
 footer{
     display: flex;
     justify-content: space-between;
@@ -53,12 +49,8 @@ footer{
     padding: 10px;
 }
 
-footer p{
+footer p, .articulo h4, .ubicacion p{
     text-align: center;
-}
-
-.contacto ul{
-    list-style: circle;
 }
 
 .redes{
@@ -71,6 +63,7 @@ footer p{
     justify-content: space-between;
     padding: 0px;
     gap: 8px;
+    list-style: none;
 }
 
 footer a{
@@ -89,22 +82,55 @@ footer img{
 
 /* ------------------------------------------------ INDEX, HEADER Y FOOTER --------------------------------------------- */
 
+.cont-articulos{
+    padding: 10px;
+}
+
+.articulo{
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.articulo:last-child {
+  border-bottom: none;
+}
+
+.img-articulos{
+    width: 50%;
+}
+
 .articulo img{
-    height: 300px;
+    width: 100%;
 }
 
-.precio{
+.info-articulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.precio p{
     background-color: red;
+    padding: 5px;
     color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 0px;
 }
 
-.precio h5{
-    font-size: 20px;
-}
-
-.articulo a {
-    text-decoration: none;
-}
+/* --------------------------------------------- CARTA -------------------------------------------------------- */
 
 .resena i{
     font-size: 30px;
