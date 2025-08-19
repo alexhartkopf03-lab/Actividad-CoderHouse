@@ -3,54 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Sobre Nosotros</title>
+    <link rel="icon" href="../assets/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="../assets/img/logo.png" alt="logo">
-        <nav>
-            <ul id="botonera">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="carta.html">CARTA</a></li>
-                <li><a href="resenas.html">RESEÑAS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-            </ul>
-            <a href="mi_pedido.html">MI PEDIDO</a>   
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1 class="titulo">¿Quienes Somos?</h1>
-            <div>
-                <img src="../assets/img/quienes_somos.jpg" alt="Dueño del restaurante en el mostrador con pizzas">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="contenedor">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo.png" alt="logo"> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#botonera" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="botonera">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="carta.html">CARTA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resenas.html">RESEÑAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                            </li>
+                        </ul>
+                        <a href="mi_pedido.html" class="btn btn-primary">MI PEDIDO</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="cont-nosotros">
+                <h1 class="titulo">¿Quienes Somos?</h1>
+                <div class="quienes-somos">
+                    <img src="../assets/img/quienes_somos.jpg" alt="Dueño del restaurante en el mostrador con pizzas">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <h2 class="titulo">¿Como Trabajamos?</h2>
+                <div class="como-trabajamos">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                    <img src="../assets/img/como_trabajamos.jpg" alt="Hombre horneando pizzas">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contacto">
+                <p>CONTACTO</p>
+                <ul>
+                    <li><a href="tel:+3564-456551">3564-456551</a></li>
+                    <li><a href="mailto:alguien@gmail.com">alguien@gmail.com</a></li>
+                </ul>
             </div>
-            <h2 class="titulo">¿Como Trabajamos?</h2>
-            <div>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-                <img src="../assets/img/como_trabajamos.jpg" alt="Hombre horneando pizzas">
+            <div class="redes">
+                <p>REDES</p>
+                <ul class="cont-redes">
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h6>CONTACTO</h6>
-            <ul>
-                <li><a href="tel:+3564-456551">3564-456551</a></li>
-                <li><a href="mailto:alguien@gmail.com">alguien@gmail.com</a></li>
-            </ul>
-        </div>
-        <div id="redes">
-            <h6>REDES</h6>
-            <ul>
-                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-            </ul>
-        </div>
-        <img src="../assets/img/logo.png" alt="Logo">
-    </footer>
+            <img src="../assets/img/logo.png" alt="Logo">
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
