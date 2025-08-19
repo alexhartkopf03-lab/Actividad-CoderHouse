@@ -3,105 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Nuestras Reseñas</title>
+    <link rel="icon" href="../assets/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="../assets/img/logo.png" alt="logo">
-        <nav>
-            <ul id="botonera">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="carta.html">CARTA</a></li>
-                <li><a href="resenas.html">RESEÑAS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-            </ul>
-            <a href="mi_pedido.html">MI PEDIDO</a>   
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1 class="titulo">Nuestras Reseñas</h1>
-            <article class="resena">
-                <i class="fa-solid fa-circle-user"></i>
-                <p>Gustavo Garcia</p>
-                <div>
-                    <img src="../assets/img/napolitana.jpg" alt="Pizza Napolitana">
-                    <div>
-                        <div>
-                            <h4>PIZZA NAPOLITANA</h4>
-                            <p>4 Estrellas</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p class="fecha">28/12/24</p>
+    <div class="contenedor">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo.png" alt="logo"> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#botonera" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="botonera">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="carta.html">CARTA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resenas.html">RESEÑAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                            </li>
+                        </ul>
+                        <a href="mi_pedido.html" class="btn btn-primary">MI PEDIDO</a>
                     </div>
                 </div>
-            </article>
-            <article class="resena">
-                <i class="fa-solid fa-circle-user"></i>
-                <p>Carlos Perez</p>
-                <div>
-                    <img src="../assets/img/especial.jpg" alt="Pizza Especial">
-                    <div>
-                        <div>
-                            <h4>PIZZA ESPECIAL</h4>
-                            <p>5 Estrellas</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p class="fecha">23/12/24</p>
+            </nav>
+        </header>
+        <main>
+            <section class="cont-resenas">
+                <h1 class="titulo">Nuestras Reseñas</h1>
+                <article class="resena">
+                    <div class="contenido"> 
+                        <i class="fa-solid fa-circle-user logo-user"></i>
+                        <p>Gustavo Garcia</p>
                     </div>
-                </div>
-            </article>
-            <article class="resena">
-                <i class="fa-solid fa-circle-user"></i>
-                <p>Antonella Acosta</p>
-                <div>
-                    <img src="../assets/img/champiniones.jpg" alt="Pizza con Champiñiones">
-                    <div>
+                    <div class="contenido">
+                        <img src="../assets/img/napolitana.jpg" alt="Pizza Napolitana">
                         <div>
-                            <h4>PIZZA CON CHAMPIÑIONES</h4>
-                            <p>3 Estrellas</p>
+                            <div class="cont-titulo-resenas">
+                                <h4>PIZZA NAPOLITANA</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="fecha">28/12/24</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p class="fecha">04/10/24</p>
                     </div>
-                </div>
-            </article>
-            <article class="resena">
-                <i class="fa-solid fa-circle-user"></i>
-                <p>Sergio Alvarez</p>
-                <div>
-                    <img src="../assets/img/muzarella.jpg" alt="Pizza Muzarella">
-                    <div>
+                </article>
+                <article class="resena">
+                    <div class="contenido"> 
+                        <i class="fa-solid fa-circle-user logo-user"></i>
+                        <p>Pedro Gomez</p>
+                    </div>
+                    <div class="contenido">
+                        <img src="../assets/img/especial.jpg" alt="Pizza Especial">
                         <div>
-                            <h4>PIZZA Muzarella</h4>
-                            <p>4 Estrellas</p>
+                            <div class="cont-titulo-resenas">
+                                <h4>PIZZA ESPECIAL</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="fecha">23/12/24</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p class="fecha">17/07/24</p>
                     </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h6>CONTACTO</h6>
-            <ul>
-                <li><a href="tel:+3564-456551">3564-456551</a></li>
-                <li><a href="mailto:alguien@gmail.com">alguien@gmail.com</a></li>
-            </ul>
-        </div>
-        <div id="redes">
-            <h6>REDES</h6>
-            <ul>
-                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-            </ul>
-        </div>
-        <img src="../assets/img/logo.png" alt="Logo">
-    </footer>
+                </article>
+                <article class="resena">
+                    <div class="contenido"> 
+                        <i class="fa-solid fa-circle-user logo-user"></i>
+                        <p>Antonella Acosta</p>
+                    </div>
+                    <div class="contenido">
+                        <img src="../assets/img/champiniones.jpg" alt="Pizza con Champiñiones">
+                        <div>
+                            <div class="cont-titulo-resenas">
+                                <h4>PIZZA CON CHAMPIÑIONES</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="fecha">23/12/24</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="resena">
+                    <div class="contenido"> 
+                        <i class="fa-solid fa-circle-user logo-user"></i>
+                        <p>Sergio Alvarez</p>
+                    </div>
+                    <div class="contenido">
+                        <img src="../assets/img/muzarella.jpg" alt="Pizza Muzarella">
+                        <div>
+                            <div class="cont-titulo-resenas">
+                                <h4>PIZZA MUZARELLA</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="fecha">23/12/24</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div class="contacto">
+                <p>CONTACTO</p>
+                <ul>
+                    <li><a href="tel:+3564-456551">3564-456551</a></li>
+                    <li><a href="mailto:alguien@gmail.com">alguien@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <p>REDES</p>
+                <ul class="cont-redes">
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+            </div>
+            <img src="../assets/img/logo.png" alt="Logo">
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

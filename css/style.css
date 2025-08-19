@@ -82,11 +82,14 @@ footer img{
 
 /* ------------------------------------------------ INDEX, HEADER Y FOOTER --------------------------------------------- */
 
-.cont-articulos{
+.cont-articulos, .cont-resenas{
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    gap: 5px;
 }
 
-.articulo{
+.articulo {
     display: flex;
     padding: 5px;
     gap: 5px;
@@ -131,13 +134,36 @@ footer img{
 }
 
 /* --------------------------------------------- CARTA -------------------------------------------------------- */
+.resena{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+}
 
-.resena i{
-    font-size: 30px;
+.contenido{
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.contenido div{
+    text-align: center;
+}
+
+.logo-user{
+    font-size: 25px;
 }
 
 .resena img{
-    height: 200px;
+   width: 35%;
+}
+
+.cont-titulo-resenas i{
+    font-size: 10px;
+    padding-bottom: 10px;
 }
 
 .fecha{
@@ -145,6 +171,8 @@ footer img{
     font-size: 12px;
     text-align: right;
 }
+
+/* -------------------------------------- RESEÑAS ------------------------------------------- */
 
 #banner{
     height: 800px;
