@@ -82,7 +82,7 @@ footer img{
 
 /* ------------------------------------------------ INDEX, HEADER Y FOOTER --------------------------------------------- */
 
-.cont-articulos, .cont-resenas{
+.cont-articulos, .cont-resenas, .cont-nosotros{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -173,6 +173,21 @@ footer img{
 }
 
 /* -------------------------------------- RESEÑAS ------------------------------------------- */
+
+.cont-nosotros img {
+    width: 100%;
+}
+
+.cont-nosotros p {
+    text-align: justify;
+}
+
+.como-trabajamos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* --------------------------------------- SOBRE NOSOTROS ------------------------------------------------ */
 
 #banner{
     height: 800px;
