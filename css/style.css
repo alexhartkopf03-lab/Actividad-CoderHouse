@@ -82,7 +82,7 @@ footer img{
 
 /* ------------------------------------------------ INDEX, HEADER Y FOOTER --------------------------------------------- */
 
-.cont-articulos, .cont-resenas, .cont-nosotros{
+.cont-articulos, .cont-resenas, .cont-nosotros, .cont-pedido{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -189,12 +189,23 @@ footer img{
 
 /* --------------------------------------- SOBRE NOSOTROS ------------------------------------------------ */
 
+.cont-pedido{
+    justify-content: center;
+}
+
 #banner{
-    height: 800px;
+    /* height: 800px;
     width: 20%;
     background-image: url(../assets/img/pizza-banner.jpg);
     background-position: right;
-    background-size: cover;
+    background-size: cover; */
+    display: none;
+}
+
+#pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #pedido th, td{
@@ -202,7 +213,7 @@ footer img{
 }
 
 #pedido img{
-    height: 100px;
+    width: 100%;
 }
 
 #pedido a{
@@ -217,4 +228,13 @@ footer img{
 #total{
     background-color: red;
     color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.form-control {
+    margin-bottom: 8px;
 }
