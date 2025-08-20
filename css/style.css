@@ -46,16 +46,25 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: rgb(212, 227, 222);
-    padding: 10px;
+    padding: 5px;
+    align-items: center;
 }
 
 footer p, .articulo h4, .ubicacion p{
     text-align: center;
 }
 
+.contacto{
+    display: none;
+}
+
 .redes{
     display: flex;
     flex-direction: column;
+}
+
+.redes p{
+    display: none;
 }
 
 .cont-redes{
@@ -64,6 +73,7 @@ footer p, .articulo h4, .ubicacion p{
     padding: 0px;
     gap: 8px;
     list-style: none;
+    margin: 0px;
 }
 
 footer a{
@@ -94,11 +104,9 @@ footer img{
     display: flex;
     padding: 5px;
     gap: 5px;
-    border-bottom: 1px solid rgb(205, 205, 205);
-}
-
-.articulo:last-child {
-  border-bottom: none;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
 }
 
 .img-articulos{
@@ -238,4 +246,18 @@ footer img{
 
 .form-control {
     margin-bottom: 8px;
+}
+
+/* Vista Tablets --------------------------------------------------------------- */
+@media (min-width: 768px) {
+    .titulo{
+        color: yellow;
+    }
+}
+
+/* Vista Laptops ------------------------------------------------------------------ */
+@media (min-width: 1200px) {
+    .titulo{
+        color: blue;
+    }
 }
