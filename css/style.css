@@ -16,6 +16,8 @@ body{
 .contenedor{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 header img{
@@ -111,6 +113,7 @@ footer img{
 
 .img-articulos{
     width: 50%;
+    text-align: center;
 }
 
 .articulo img{
@@ -210,6 +213,7 @@ footer img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid rgb(205, 205, 205);
 }
 
 #pedido th, td{
@@ -227,6 +231,10 @@ footer img{
 
 #pedido a i{
     font-size: 12px;
+}
+
+.precio-tabla{
+    display: none;
 }
 
 #total{
@@ -305,7 +313,6 @@ footer img{
 
     #pedido{
         grid-area: pedido;
-        border-bottom: 1px solid rgb(205, 205, 205);
     }
 
     #envio{
@@ -316,7 +323,7 @@ footer img{
         max-width: 170px;
     }
 
-    
+
 }
 
 
