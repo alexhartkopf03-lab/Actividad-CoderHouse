@@ -92,7 +92,6 @@ footer img{
     height: 60px;
 }
 
-/* ------------------------------------------------ INDEX, HEADER Y FOOTER --------------------------------------------- */
 
 
 .cont-articulos, .cont-resenas, .cont-nosotros, .cont-pedido{
@@ -145,7 +144,8 @@ footer img{
     margin: 0px;
 }
 
-/* --------------------------------------------- CARTA -------------------------------------------------------- */
+
+
 .resena{
     display: flex;
     flex-direction: column;
@@ -184,7 +184,7 @@ footer img{
     text-align: right;
 }
 
-/* -------------------------------------- RESEÑAS ------------------------------------------- */
+
 
 .cont-nosotros img {
     width: 100%;
@@ -199,7 +199,7 @@ footer img{
     flex-direction: column-reverse;
 }
 
-/* --------------------------------------- SOBRE NOSOTROS ------------------------------------------------ */
+
 
 .cont-pedido{
     justify-content: center;
