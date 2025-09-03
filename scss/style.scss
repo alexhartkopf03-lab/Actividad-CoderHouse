@@ -1,0 +1,501 @@
+//VARIABLES
+$tablet: 768px;
+$desktop: 1200px;
+
+//FUENTES
+@font-face {
+    font-family: "montserrat";
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+//CLASES GENERALES
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+//DISEÑO GENERAL DEL CONTENEDOR, HEADER Y FOOTER DE TODAS LAS PAGINAS.
+body {
+    font-family: "montserrat", sans-serif;
+    font-weight: 300;
+
+    div.contenedor {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
+
+        header {
+            nav {
+                div {
+                    img {
+                        height: 70px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(212, 227, 222);
+            padding: 5px;
+            align-items: center;
+
+            div.contacto {
+                display: none;
+
+                p {
+                    text-align: center;
+                }
+
+                ul {
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            div.redes {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    display: none;
+                    text-align: center;
+                }
+
+                ul.cont-redes {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0px;
+                    gap: 8px;
+                    list-style: none;
+                    margin: 0px;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+
+            img {
+                height: 60px;
+            }
+        }
+    }
+}
+
+//DISEÑO INDEX
+
+div.ubicacion {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+
+//DISEÑO CARTA
+section.cont-articulos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+
+    article.articulo {
+        display: flex;
+        padding: 5px;
+        gap: 5px;
+        border: 1px solid rgb(205, 205, 205);
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+        div.img-articulos {
+            width: 50%;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        div.info-articulos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+
+            h4 {
+                text-align: center;
+            }
+
+            div.precio {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                padding: 10px;
+
+                p {
+                    background-color: red;
+                    padding: 5px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    border-radius: 5px;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+//DISEÑO RESEÑAS
+section.cont-resenas {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+
+    article.resena {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border: 1px solid rgb(205, 205, 205);
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+        div.contenido {
+            display: flex;
+            gap: 5px;
+            align-items: flex-start;
+
+            i.logo-user {
+                font-size: 25px;
+            }
+
+            img {
+                width: 35%;
+            }
+
+            div {
+                text-align: center;
+
+                div.cont-titulo-resenas {
+                    font-size: 10px;
+                    padding-bottom: 10px;
+                }
+
+                p.fecha {
+                    color: gray;
+                    font-size: 12px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+//DISEÑO NOSOTROS
+section.cont-nosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+
+    div.quienes-somos {
+        img {
+            width: 100%;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    div.como-trabajamos {
+        display: flex;
+        flex-direction: column-reverse;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+//DISEÑO MI_PEDIDO
+section.cont-pedido {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    justify-content: center;
+
+    div#banner {
+        display: none;
+    }
+
+    div#pedido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgb(205, 205, 205);
+
+        table {
+            thead {
+                tr {
+                    th {
+                        text-align: center;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        text-align: center;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: red;
+
+                            i {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        p#total {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border-radius: 10px;
+        }
+    }
+
+    div#envio {
+        form {
+            input.form-control {
+                margin-bottom: 8px;
+            }
+
+            textarea.form-control {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+
+    //CLASES GENERALES
+    .titulo:first-child {
+        grid-column: span 2;
+    }
+
+    //GENERAL FOOTER TODAS LAS PAGINAS
+    footer {
+        div.contacto {
+            display: block;
+        }
+
+        div.redes {
+            p {
+                display: block;
+            }
+        }
+    }
+
+    //DISEÑO INDEX
+    div.ubicacion {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+
+        div {
+            width: 40%;
+            height: 300px;
+
+            iframe {
+                width: 100%;
+                height: 80%;
+            }
+        }
+    }
+
+    //DISEÑO CARTA
+    section.cont-articulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    //DISEÑO RESEÑAS
+    section.cont-resenas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    //DISEÑO NOSOTROS{
+    section.cont-nosotros {
+        div.quienes-somos {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        div.como-trabajamos {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    //DISEÑO MI_PEDIDO
+    section.cont-pedido {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "banner pedido"
+            "banner envio";
+        gap: 10px;
+
+        div#banner {
+            display: block;
+            background-image: url(../assets/img/pizza-banner.jpg);
+            background-position: right;
+            background-size: cover;
+            grid-area: banner;
+        }
+
+        div#pedido {
+            grid-area: pedido;
+
+            table {
+                tbody {
+                    tr {
+                        td {
+                            img {
+                                max-width: 170px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div#envio {
+            grid-area: envio;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    //CLASES GENERALES
+    .titulo:first-child {
+        grid-column: span 3;
+    }
+
+    //DISEÑO INDEX
+    img.img-carrusel{
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+    }
+    div.ubicacion{
+        div{
+            height: 400px;
+        }
+    }
+
+    //DISEÑO CARTA
+    section.cont-articulos{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    //DISEÑO RESEÑAS
+    section.cont-resenas{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    //DISEÑO NOSOTROS
+    section.cont-nosotros{
+      width: 70%;
+        margin-right: auto;
+        margin-left: auto;  
+    }
+    
+    //DISEÑO PEDIDO
+    section.cont-pedido{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        grid-template-columns: 10% 65% 25%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "banner pedido envio";
+        gap: 20px;
+
+        div#pedido{
+            border-bottom: none;
+        border-right: 1px solid rgb(205, 205, 205);
+        padding-right: 20px;
+
+        }
+    }
+
+}
