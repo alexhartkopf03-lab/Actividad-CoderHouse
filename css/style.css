@@ -246,10 +246,10 @@ section.cont-pedido div#envio form textarea.form-control {
   .titulo:first-child {
     grid-column: span 2;
   }
-  footer div.contacto {
+  body div.contenedor footer div.contacto {
     display: block;
   }
-  footer div.redes p {
+  body div.contenedor footer div.redes p {
     display: block;
   }
   div.ubicacion {

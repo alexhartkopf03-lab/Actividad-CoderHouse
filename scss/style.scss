@@ -336,14 +336,18 @@ section.cont-pedido {
     }
 
     //GENERAL FOOTER TODAS LAS PAGINAS
-    footer {
-        div.contacto {
-            display: block;
-        }
+    body {
+        div.contenedor {
+            footer {
+                div.contacto {
+                    display: block;
+                }
 
-        div.redes {
-            p {
-                display: block;
+                div.redes {
+                    p {
+                        display: block;
+                    }
+                }
             }
         }
     }
@@ -443,57 +447,59 @@ section.cont-pedido {
 }
 
 @media (min-width: $desktop) {
+
     //CLASES GENERALES
     .titulo:first-child {
         grid-column: span 3;
     }
 
     //DISEÑO INDEX
-    img.img-carrusel{
+    img.img-carrusel {
         height: 600px;
         object-fit: cover;
         object-position: center;
     }
-    div.ubicacion{
-        div{
+
+    div.ubicacion {
+        div {
             height: 400px;
         }
     }
 
     //DISEÑO CARTA
-    section.cont-articulos{
+    section.cont-articulos {
         display: grid;
-    grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     //DISEÑO RESEÑAS
-    section.cont-resenas{
+    section.cont-resenas {
         display: grid;
-    grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     //DISEÑO NOSOTROS
-    section.cont-nosotros{
-      width: 70%;
+    section.cont-nosotros {
+        width: 70%;
         margin-right: auto;
-        margin-left: auto;  
+        margin-left: auto;
     }
-    
+
     //DISEÑO PEDIDO
-    section.cont-pedido{
+    section.cont-pedido {
         width: 70%;
         margin-right: auto;
         margin-left: auto;
         grid-template-columns: 10% 65% 25%;
         grid-template-rows: 1fr;
-        grid-template-areas: 
-        "banner pedido envio";
+        grid-template-areas:
+            "banner pedido envio";
         gap: 20px;
 
-        div#pedido{
+        div#pedido {
             border-bottom: none;
-        border-right: 1px solid rgb(205, 205, 205);
-        padding-right: 20px;
+            border-right: 1px solid rgb(205, 205, 205);
+            padding-right: 20px;
 
         }
     }
