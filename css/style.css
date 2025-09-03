@@ -33,6 +33,12 @@ body div.contenedor {
 body div.contenedor header nav div img {
   height: 70px;
 }
+body div.contenedor header nav div div ul li a {
+  cursor: pointer;
+}
+body div.contenedor header nav div div ul li a:hover {
+  animation: saltito 0.4s ease;
+}
 body div.contenedor footer {
   display: flex;
   justify-content: space-between;
@@ -243,6 +249,20 @@ section.cont-pedido div#envio form textarea.form-control {
 }
 
 @media (min-width: 768px) {
+  @keyframes saltito {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-6px);
+    }
+    60% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   .titulo:first-child {
     grid-column: span 2;
   }

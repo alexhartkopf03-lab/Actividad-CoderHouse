@@ -44,6 +44,20 @@ body {
                     img {
                         height: 70px;
                     }
+
+                    div {
+                        ul {
+                            li {
+                                a {
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        animation: saltito 0.4s ease;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -329,6 +343,25 @@ section.cont-pedido {
 }
 
 @media (min-width: $tablet) {
+
+    //ANIMACIONES
+    @keyframes saltito {
+        0% {
+            transform: translateY(0);
+        }
+
+        30% {
+            transform: translateY(-6px);
+        }
+
+        60% {
+            transform: translateY(3px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
 
     //CLASES GENERALES
     .titulo:first-child {
