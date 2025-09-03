@@ -1,6 +1,14 @@
-//VARIABLES
+//VARIABLES TAMAÑOS
 $tablet: 768px;
 $desktop: 1200px;
+
+//MIXIN
+@mixin cont-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
 
 //FUENTES
 @font-face {
@@ -139,10 +147,7 @@ div.ubicacion {
 
 //DISEÑO CARTA
 section.cont-articulos {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
+    @include cont-section();
 
     article.articulo {
         display: flex;
@@ -194,10 +199,7 @@ section.cont-articulos {
 
 //DISEÑO RESEÑAS
 section.cont-resenas {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
+    @include cont-section();
 
     article.resena {
         display: flex;
@@ -240,10 +242,7 @@ section.cont-resenas {
 
 //DISEÑO NOSOTROS
 section.cont-nosotros {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
+    @include cont-section();
 
     div.quienes-somos {
         img {
@@ -271,10 +270,7 @@ section.cont-nosotros {
 
 //DISEÑO MI_PEDIDO
 section.cont-pedido {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
+    @include cont-section();
     justify-content: center;
 
     div#banner {
