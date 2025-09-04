@@ -1,3 +1,14 @@
+section.cont-resenas article.resena, section.cont-articulos article.articulo {
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+body div.contenedor footer div.redes ul.cont-redes li a, body div.contenedor footer div.contacto ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 @font-face {
   font-family: "montserrat";
   src: url(../assets/fonts/Montserrat-Medium.ttf);
@@ -53,8 +64,6 @@ body div.contenedor footer div.contacto p {
   text-align: center;
 }
 body div.contenedor footer div.contacto ul li a {
-  text-decoration: none;
-  color: black;
   font-size: 14px;
 }
 body div.contenedor footer div.redes {
@@ -74,8 +83,6 @@ body div.contenedor footer div.redes ul.cont-redes {
   margin: 0px;
 }
 body div.contenedor footer div.redes ul.cont-redes li a {
-  text-decoration: none;
-  color: black;
   font-size: 25px;
 }
 body div.contenedor footer img {
@@ -102,9 +109,6 @@ section.cont-articulos article.articulo {
   display: flex;
   padding: 5px;
   gap: 5px;
-  border: 1px solid rgb(205, 205, 205);
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 section.cont-articulos article.articulo div.img-articulos {
   width: 50%;
@@ -149,9 +153,6 @@ section.cont-resenas article.resena {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  border: 1px solid rgb(205, 205, 205);
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 section.cont-resenas article.resena div.contenido {
   display: flex;

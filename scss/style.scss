@@ -10,6 +10,29 @@ $desktop: 1200px;
     gap: 5px;
 }
 
+@mixin tamano ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin titulos ($alin, $padding, $marg-top){
+    text-align: $alin;
+    padding: $padding;
+    margin-top: $marg-top;
+}
+
+//EXTEND
+%sombreado-cajas{
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+%botones-simples{
+    text-decoration: none;
+    color: black;
+}
+
 //FUENTES
 @font-face {
     font-family: "montserrat";
@@ -23,16 +46,12 @@ $desktop: 1200px;
 }
 
 .titulo {
-    text-align: center;
-    padding: 10px;
-    margin-top: 10px;
+    @include titulos(center, 10px, 10px);
     font-weight: bold;
 }
 
 .subtitulo {
-    text-align: center;
-    padding: 5px;
-    margin-top: 10px;
+    @include titulos(center, 5px, 10px);
 }
 
 //DISEÑO GENERAL DEL CONTENEDOR, HEADER Y FOOTER DE TODAS LAS PAGINAS.
@@ -87,8 +106,7 @@ body {
                 ul {
                     li {
                         a {
-                            text-decoration: none;
-                            color: black;
+                            @extend %botones-simples;
                             font-size: 14px;
                         }
                     }
@@ -114,8 +132,7 @@ body {
 
                     li {
                         a {
-                            text-decoration: none;
-                            color: black;
+                            @extend %botones-simples;
                             font-size: 25px;
                         }
                     }
@@ -153,9 +170,7 @@ section.cont-articulos {
         display: flex;
         padding: 5px;
         gap: 5px;
-        border: 1px solid rgb(205, 205, 205);
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        @extend %sombreado-cajas;
 
         div.img-articulos {
             width: 50%;
@@ -205,9 +220,7 @@ section.cont-resenas {
         display: flex;
         flex-direction: column;
         padding: 5px;
-        border: 1px solid rgb(205, 205, 205);
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        @extend %sombreado-cajas;
 
         div.contenido {
             display: flex;
@@ -388,12 +401,10 @@ section.cont-pedido {
         justify-content: center;
 
         div {
-            width: 40%;
-            height: 300px;
+            @include tamano(40%, 300px);
 
             iframe {
-                width: 100%;
-                height: 80%;
+                @include tamano(100%, 80%);
             }
         }
     }
