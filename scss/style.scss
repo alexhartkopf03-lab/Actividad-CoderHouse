@@ -235,7 +235,11 @@ section.cont-resenas {
                 width: 35%;
             }
 
-            div {
+            div.cont-resena {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
                 text-align: center;
 
                 div.cont-titulo-resenas {

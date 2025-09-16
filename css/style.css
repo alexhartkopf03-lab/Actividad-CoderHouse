@@ -165,14 +165,18 @@ section.cont-resenas article.resena div.contenido i.logo-user {
 section.cont-resenas article.resena div.contenido img {
   width: 35%;
 }
-section.cont-resenas article.resena div.contenido div {
+section.cont-resenas article.resena div.contenido div.cont-resena {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   text-align: center;
 }
-section.cont-resenas article.resena div.contenido div div.cont-titulo-resenas {
+section.cont-resenas article.resena div.contenido div.cont-resena div.cont-titulo-resenas {
   font-size: 10px;
   padding-bottom: 10px;
 }
-section.cont-resenas article.resena div.contenido div p.fecha {
+section.cont-resenas article.resena div.contenido div.cont-resena p.fecha {
   color: gray;
   font-size: 12px;
   text-align: right;
