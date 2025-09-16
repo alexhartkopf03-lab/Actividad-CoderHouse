@@ -13,7 +13,7 @@
 </ul>
 
 <h2>🖼️ Captura</h2>
-<img src="./assets/screenshot.png" alt="Pantalla principal de la pizzería" width="600">
+<img src="./assets/img/screenshot.png" alt="Pantalla principal de la pizzería" width="600">
 
 <h2>👨‍💻 Autor</h2>
 <p>
